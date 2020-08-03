@@ -1,0 +1,104 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    display: block;
+    width: 100% auto;
+    position: relative;
+}
+
+header{
+    background-image: url('../images/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position: absolute;
+    width: 100% auto;
+    padding: 20px;
+    margin: -20px;
+    text-align: center;
+}
+
+header, h3{
+    font-family: 'Lobster', cursive;
+    color: rgb(204, 9, 9);
+    font-size: 110%;
+}
+
+.container{
+    position: relative;
+    border: 2px solid;
+    background-color: rgba(255, 255, 255, 0.74);
+    margin: 50px;
+    padding: 20px;
+}
+
+#displayOrder{
+    background-image: url('../images/order.png');
+    background-attachment: local;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    display: block;
+    color: black;
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 50px;
+    font-family: 'Bellota', cursive;
+}
+
+
+form div, #btnbox{
+    margin: 20px;
+    padding: 20px;
+}
+
+form div label {
+    display: block;
+}
+
+form div label img{
+    width: 80px;
+    height: 70px;
+    display: inline-block;
+}
+
+form div label img:hover{
+    width: 150px;
+    height: 130px;
+}
+
+form div input:checked + span {
+    background-color: rgba(207, 87, 57, 0.685);
+    font-weight: bold;
+}
+
+#btnbox{
+    background-image: url('../images/button-bg.jpg');
+    background-position: absolute;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px;
+    margin: -20px;
+}
+
+button{
+    border-radius: 100%;
+    border: 2px solid rgb(170, 2, 2);
+    padding: 20px;
+    background-color: rgb(240, 10, 10);
+    color: white;
+    font-family: 'Bellota', cursive;
+    font-weight: bold;
+    font-size: 120%;
+    
+}
+
