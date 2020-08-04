@@ -1,0 +1,171 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    display: block;
+    width: 100% auto;
+    position: relative;
+}
+
+header{
+    background-image: url('../images/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100% auto;
+    padding: 20px;
+    margin: -20px;
+    text-align: center;
+}
+
+header, h3{
+    font-family: 'Yeseva One', cursive;
+    color: rgb(194, 193, 193);
+    font-size: 110%;
+}
+
+.container{
+    position: relative;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    margin: 50px;
+    padding: 20px;
+}
+
+#cheesyPizza, #meatyPizza, #veggyPizza {
+    display: none;
+
+}
+
+hr {
+    border: black;
+}
+
+input[value="Cheesy"]:checked ~ div#cheesyPizza{
+    display: block;
+} 
+
+input[value="Meaty"]:checked ~ div#meatyPizza{
+    display: block;
+} 
+
+input[value="Veggy"]:checked ~ div#veggyPizza{
+    display: block;
+} 
+
+#sandwichAllGarden, #sandwichBeefy, #sandwichGrill, #sandwichPork {
+    display: none;
+}
+
+input[value="AllGarden"]:checked ~ div#sandwichAllGarden{
+    display: block;
+} 
+
+input[value="Beefy"]:checked ~ div#sandwichBeefy{
+    display: block;
+} 
+
+input[value="Grill"]:checked ~ div#sandwichGrill{
+    display: block;
+} 
+
+input[value="Pork"]:checked ~ div#sandwichPork{
+    display: block;
+} 
+
+#drinkCola, #drinkOrange, #drinkLemon, #drinkRoot{
+    display: none;
+}
+
+input[value="Cola"]:checked ~ div#drinkCola{
+    display: block;
+} 
+
+input[value="Orange"]:checked ~ div#drinkOrange{
+    display: block;
+} 
+
+input[value="Lemon"]:checked ~ div#drinkLemon{
+    display: block;
+} 
+
+input[value="RootBeer"]:checked ~ div#drinkRoot{
+    display: block;
+} 
+
+#displayOrder{
+    background-image: url('../images/order.png');
+    background-attachment: local;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    display: block;
+    color: black;
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 50px;
+    font-family: 'Bellota', cursive;
+}
+
+
+main div, #btnbox{
+    margin: 20px;
+    padding: 20px;
+}
+
+main div.customerInfo label {
+    display: block;
+}
+
+
+main div img{
+    width: 80px;
+    height: 70px;
+    display: inline-block;
+}
+
+main div label {
+    display: block;
+}
+
+main div img:hover{
+    width: 150px;
+    height: 130px;
+}
+
+input {
+    display: inline;
+}
+
+main div input:checked + label {
+    font-weight: bold;
+}
+
+#btnbox{
+    background-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px;
+    margin: -20px;
+}
+
+button#calcOrder, button#editOrder{
+    padding: 8px;
+    margin: 10px;
+    font-family: 'Bellota', cursive;
+    font-weight: bold;
+    font-size: 120%;
+    
+}
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>City Delicatessen</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class="container">
+
+		<header>
+			<h1>City Delicatessen</h1>
+			<h2>Order Form</h2>
+			<div id="currentDate"></div>
+		</header>
+
+		<main>
+
+			<div class="customerInfo">
+				<h3>Customer Information</h3>
+				<label for="firstName">First Name</label>
+				<input type="text" name="firstName" id="firstName">
+				<label for="lastName">Last Name</label>
+				<input type="text" name="lastName" id="lastName">
+				<label for="address">Address</label>
+				<input type="text" name="address" id="address">
+				<label for="phone">Phone Number</label>
+				<input type="tel" name="phone" id="phone">
+			</div>
+			<hr>
+			<div>
+				<h3>Select Pizza Type</h3>
+				
+				<img src="assets/images/cheesy-pizza.jpg" alt="Super Cheesy">
+				<input type="checkbox" name="pizzaType[]" value="Cheesy">
+				<label for="pizza1" >Super Cheesy</label>
+				
+				<img src="assets/images/extra-meaty.jpg" alt="Extra Meaty">
+				<input type="checkbox" name="pizzaType[]" value="Meaty">
+				<label for="pizza2" >Extra Meaty</label>
+				
+
+				<img src="assets/images/really-veggy.jpg" alt="Really Veggy">
+				<input type="checkbox" name="pizzaType[]" value="Veggy">
+				<label for="pizza3" >Really Veggy</label>
+
+				<div id="cheesyPizza">
+				<h3>Select Cheesy Pizza Size</h3>
+				<select name="cheesySize" id="cheesySize">
+					<option value="">----------</option>
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>
+					<option value="Extra Large">Extra Large</option>
+				</select>
+
+				<h3>Number of Cheesy Pizzas</h3>
+				<input type="number" name="numOfCheesy" id="numOfCheesy" min="0" value="0">
+
+				<h3>Select Pizza Toppings</h3>
+				<label>
+					<input type="checkbox" name="cheesyToppings[]" value="Extra Cheese">
+					<span>Extra Cheese</span>
+				</label>
+				<label>
+					<input type="checkbox" name="cheesyToppings[]" value="Pepperoni">
+					<span>Pepperoni</span>
+				</label>
+				<label>
+					<input type="checkbox" name="cheesyToppings[]" value="Mushrooms">
+					<span>Mushrooms</span>
+				</label>
+				<label>
+					<input type="checkbox" name="cheesyToppings[]" value="Bacon">
+					<span>Bacon</span>
+				</label>
+				<label>
+					<input type="checkbox" name="cheesyToppings[]" value="Olives">
+					<span>Olives</span>
+				</label>
+			</div>
+
+				<div id="meatyPizza">
+					<h3>Select Meaty Pizza Size</h3>
+					<select name="meatySize" id="meatySize">
+						<option value="">----------</option>
+						<option value="Small">Small</option>
+						<option value="Medium">Medium</option>
+						<option value="Large">Large</option>
+						<option value="Extra Large">Extra Large</option>
+					</select>
+	
+					<h3>Number of Meaty Pizzas</h3>
+					<input type="number" name="numOfMeaty" id="numOfMeaty" min="0" value="0">
+	
+					<h3>Select Pizza Toppings</h3>
+					<label>
+						<input type="checkbox" name="meatyToppings[]" value="Extra Cheese">
+						<span>Extra Cheese</span>
+					</label>
+					<label>
+						<input type="checkbox" name="meatyToppings[]" value="Pepperoni">
+						<span>Pepperoni</span>
+					</label>
+					<label>
+						<input type="checkbox" name="meatyToppings[]" value="Mushrooms">
+						<span>Mushrooms</span>
+					</label>
+					<label>
+						<input type="checkbox" name="meatyToppings[]" value="Bacon">
+						<span>Bacon</span>
+					</label>
+					<label>
+						<input type="checkbox" name="meatyToppings[]" value="Olives">
+						<span>Olives</span>
+					</label>
+				</div>
+
+					<div id="veggyPizza">
+						<h3>Select Veggy Pizza Size</h3>
+						<select name="veggySize" id="veggySize">
+							<option value="">----------</option>
+							<option value="Small">Small</option>
+							<option value="Medium">Medium</option>
+							<option value="Large">Large</option>
+							<option value="Extra Large">Extra Large</option>
+						</select>
+		
+						<h3>Number of Veggy Pizzas</h3>
+						<input type="number" name="numOfVeggy" id="numOfVeggy" min="0" value="0">
+		
+						<h3>Select Pizza Toppings</h3>
+						<label>
+							<input type="checkbox" name="veggyToppings[]" value="Extra Cheese">
+							<span>Extra Cheese</span>
+						</label>
+						<label>
+							<input type="checkbox" name="veggyToppings[]" value="Pepperoni">
+							<span>Pepperoni</span>
+						</label>
+						<label>
+							<input type="checkbox" name="veggyToppings[]" value="Mushrooms">
+							<span>Mushrooms</span>
+						</label>
+						<label>
+							<input type="checkbox" name="veggyToppings[]" value="Bacon">
+							<span>Bacon</span>
+						</label>
+						<label>
+							<input type="checkbox" name="veggyToppings[]" value="Olives">
+							<span>Olives</span>
+						</label>
+					</div>
+
+			</div>
+			<hr>
+			<div>
+
+				<h3>Select a Sandwich</h3>
+				
+					<img src="assets/images/allGarden.jpg" alt="All Garden Vegetarian">
+					<input type="checkbox" name="sandwichType[]" value="AllGarden">
+					<label for="sandwich1">All Garden Vegetarian</label>
+				
+				
+					<img src="assets/images/beefy.jpg" alt="Big Beef on a Bun">
+					<input type="checkbox" name="sandwichType[]" value="Beefy">
+					<label for="sandwich2">Big Beef on a Bun</label>
+				
+				
+					<img src="assets/images/grill.jpg" alt="Mixed Grill">
+					<input type="checkbox" name="sandwichType[]" value="Grill">
+					<label for="sandwich3">Mixed Grill</label>
+				
+				
+					<img src="assets/images/pork.jpg" alt="Grilled Pork">
+					<input type="checkbox" name="sandwichType[]" value="Pork">
+					<label for="sandwich4">Grilled Pork</label>
+				
+					
+
+				<div id="sandwichAllGarden">
+					<h3>Number of All Garden Sandwiches</h3>
+					<input type="number" name="numOfAllGarden" id="numOfAllGarden" min="0" value="0">
+				</div>
+
+				<div id="sandwichBeefy">
+					<h3>Number of Big Beef on a Bun Sandwiches</h3>
+					<input type="number" name="numOfBeefy" id="numOfBeefy" min="0" value="0">
+				</div>
+				<div id="sandwichGrill">
+					<h3>Number of Mixed Grill Sandwiches</h3>
+					<input type="number" name="numOfGrill" id="numOfGrill" min="0" value="0">
+				</div>
+
+				<div id="sandwichPork">
+					<h3>Number of Grilled Pork Sandwiches</h3>
+					<input type="number" name="numOfPork" id="numOfPork" min="0" value="0">
+				</div>
+
+			
+			</div>
+			<hr>
+			<div>
+				<h3>Select a Drink</h3>
+				
+					<input type="checkbox" name="drinkType[]" value="Cola">
+					<label for="drink1">Cola</label>
+
+					<input type="checkbox" name="drinkType[]" value="Orange">
+					<label for="drink2">Orange</label>
+			
+					<input type="checkbox" name="drinkType[]" value="Lemon">
+					<label for="drink3">Lemon</label>
+				
+					<input type="checkbox" name="drinkType[]" value="RootBeer">
+					<label for="drink4">Root Beer</label>
+				
+					
+
+				<div id="drinkCola">
+				<h3>Cola Size</h3>
+				<select name="colaSize" id="colaSize">
+					<option value="">-----------</option>
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>
+				</select>
+
+				<h3>Number of Cola</h3>
+				<input type="number" name="numOfCola" id="numOfCola" min="0" value="0">
+				</div>
+
+				<div id="drinkOrange">
+					<h3>Orange Juice Size</h3>
+					<select name="orangeSize" id="orangeSize">
+						<option value="">-----------</option>
+						<option value="Small">Small</option>
+						<option value="Medium">Medium</option>
+						<option value="Large">Large</option>
+					</select>
+	
+					<h3>Number of Orange Juice</h3>
+					<input type="number" name="numOfOrange" id="numOfOrange" min="0" value="0">
+				</div>
+
+				<div id="drinkLemon">
+					<h3>Lemon Juice Size</h3>
+					<select name="lemonSize" id="lemonSize">
+						<option value="">-----------</option>
+						<option value="Small">Small</option>
+						<option value="Medium">Medium</option>
+						<option value="Large">Large</option>
+					</select>
+	
+					<h3>Number of Lemon Juice</h3>
+					<input type="number" name="numOfLemon" id="numOfLemon" min="0" value="0">
+				</div>
+
+				<div id="drinkRoot">
+					<h3>Root Beer Size</h3>
+					<select name="rootSize" id="rootSize">
+						<option value="">-----------</option>
+						<option value="Small">Small</option>
+						<option value="Medium">Medium</option>
+						<option value="Large">Large</option>
+					</select>
+	
+					<h3>Number of Root Beers</h3>
+					<input type="number" name="numOfRoot" id="numOfRoot" min="0" value="0">
+				</div>
+
+			</div>
+
+		</main>
+
+		<div id="btnbox">
+			<button id="editOrder" disabled="true">Edit Order</button>
+			<button id="calcOrder">Calculate Order</button>
+		</div>
+
+	</div>
+
+		<section id="displayOrder"></section>
+
+
+		<script type="text/javascript" src="assets/scripts/A2order-form.js"></script>
+	</body>
+
+</html>
